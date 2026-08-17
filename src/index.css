@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-[#F6F4F0] text-gray-900;
+}
+
+@theme {
+  --color-logo: #0c0c0c;
+  --color-badge: #102a63;
+
+  /* btns colors */
+  --color-primaryCta: #e67e00;
+  --color-secondaryCta: #2563eb;
+  --color-whatsapp: #1ebe5a;
+  --color-categoryBtn: #25479d;
+}
+
+.btn-ani {
+  @apply hover:scale-105 duration-300 transform transition-all ease-out cursor-pointer;
+}
+
+.section-padding {
+  @apply py-10 lg:py-16;
+}
+
+.section-padding-top {
+  @apply pt-10 lg:pt-16;
+}
+
+.section-desc {
+  @apply text-[16px];
+}
+
+
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: floatY 2.2s ease-in-out infinite;
+}
+
+
+/* @layer utilities {
+  .mask-radial-at-top-right {
+    -webkit-mask-image: radial-gradient(circle at top right, black 0%, transparent 100%);
+    mask-image: radial-gradient(circle at top right, black 0%, transparent 100%);
+  }
+} */
